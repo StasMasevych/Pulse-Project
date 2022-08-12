@@ -1,0 +1,836 @@
+@charset "UTF-8";
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* line 4, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/style.scss */
+* {
+  font-family: "Museo Sans", sans-serif;
+}
+
+/* line 8, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/style.scss */
+.container {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_promo.scss */
+.promo {
+  min-height: 650px;
+  padding: 21px 0 93px 0;
+  background: url(../img/screen_1/background.png) center center/cover no-repeat;
+}
+
+/* line 5, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_promo.scss */
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 90px;
+}
+
+/* line 11, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_promo.scss */
+.promo__header {
+  font-weight: 700;
+  font-size: 42px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 42px;
+}
+
+/* line 18, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_promo.scss */
+.promo__subheader {
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+/* line 26, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_promo.scss */
+.promo__icons {
+  margin-top: 42px;
+  width: 425px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 32, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_promo.scss */
+.promo__icon {
+  width: 108px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+/* line 38, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_promo.scss */
+.promo__icon img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* line 44, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_promo.scss */
+.promo__link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: 18px;
+}
+
+/* line 49, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_promo.scss */
+.promo__link a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_header.scss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 5, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_header.scss */
+.header__logo {
+  width: 250px;
+}
+
+/* line 7, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_header.scss */
+.header__logo img {
+  width: 100%;
+}
+
+/* line 12, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_header.scss */
+.header__official {
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+/* line 17, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_header.scss */
+.header__official span {
+  display: block;
+  font-size: 18px;
+}
+
+/* line 23, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_header.scss */
+.header__phone {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* line 28, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_header.scss */
+.header__phone:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 34, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_header.scss */
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_buttons.scss */
+.button {
+  color: #FFFFFF;
+  width: 153px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #c70101;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* line 12, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_buttons.scss */
+.button_main {
+  margin-top: 67px;
+  width: 300px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #c70101;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* line 24, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_buttons.scss */
+.button_submit {
+  width: 100%;
+  height: 55px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* line 32, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_buttons.scss */
+.button_mini {
+  width: 135px;
+  height: 44px;
+  font-size: 14px;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits {
+  min-height: 473px;
+}
+
+/* line 4, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits_title {
+  margin-top: 70px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #0D0D0D;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 13, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* line 20, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits_item {
+  margin-top: 40px;
+}
+
+/* line 24, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits .icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/* line 29, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits .icon .heart_animated {
+  animation-name: heartbeat;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  /* безкінечно */
+}
+
+/* line 34, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits .icon .heart_animated:hover {
+  animation-play-state: paused;
+}
+
+/* line 41, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits .subtitle {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #0D0D0D;
+}
+
+/* line 48, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits .descr {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  color: #0D0D0D;
+}
+
+/* line 54, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_benefits.scss */
+.benefits .descr a {
+  color: red;
+  text-decoration: underline;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_consultation.scss */
+.consultation {
+  min-height: 680px;
+  padding: 100px 0 92px 0;
+  background: url("../img/section_form/bg2.png") center center/cover no-repeat;
+}
+
+/* line 7, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_consultation.scss */
+.consultation__title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* line 12, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_consultation.scss */
+.consultation__title_left {
+  text-align: left;
+}
+
+/* line 17, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_consultation.scss */
+.consultation__descr {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* line 22, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_consultation.scss */
+.consultation input.error {
+  border: 1px solid red;
+}
+
+/* line 25, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_consultation.scss */
+.consultation label.error {
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_forms.scss */
+.feed-form {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+/* line 6, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_forms.scss */
+.feed-form input {
+  width: 303px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin-bottom: 15px;
+  border: none;
+  padding: 0 20px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #4B4B4B;
+}
+
+/* line 17, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_forms.scss */
+.feed-form input:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+/* line 22, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_forms.scss */
+.feed-form_mt25 {
+  margin-top: 25px;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_carousel.scss */
+.carousel {
+  padding: 81px 0;
+}
+
+/* line 3, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_carousel.scss */
+.carousel__inner {
+  position: relative;
+  width: 750px;
+  margin: 0 auto;
+}
+
+/* line 8, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_carousel.scss */
+.carousel .prev, .carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -66px;
+  border: none;
+}
+
+/* line 15, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_carousel.scss */
+.carousel .prev img, .carousel .next img {
+  width: 31px;
+  height: 50px;
+}
+
+/* line 20, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_carousel.scss */
+.carousel .next {
+  right: -66px;
+  left: auto;
+}
+
+/* line 26, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_carousel.scss */
+.carousel .tns-slider img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 540px;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog {
+  padding-bottom: 100px;
+  /* /* .container {
+        margin-left: 90px;
+        margin-right: 90px;} */
+}
+
+/* line 7, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 11, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog__tabs {
+  margin-top: 70px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* line 21, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog__tab {
+  width: 222px;
+  height: 52px;
+  background: rgba(0, 0, 0, 0.0001);
+  border: 2px solid #D0D0D0;
+  font-weight: 400;
+  font-size: 18px;
+  color: #6B6B6B;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  transform: skewX(-25deg);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+/* line 37, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog__tab:hover {
+  box-shadow: 3px 3px 20px #c70101;
+  border: none;
+}
+
+/* line 41, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog__tab div {
+  transform: skewX(25deg);
+}
+
+/* line 44, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog__tab_active {
+  background: #c70101;
+  color: #FFFFFF;
+  border: none;
+}
+
+/* line 52, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog__content {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: none;
+}
+
+/* line 58, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog__content_active {
+  display: flex;
+}
+
+/* line 62, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item {
+  width: 303px;
+  /* залишив поки 303 щоб був марджін між картками, бо коли більше - марджін зменшується + карточки не вміщається в ряд і летять на другий */
+  min-height: 442px;
+  border: 2px solid #E8E8E8;
+  padding: 20px 20px 26px 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* line 69, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 200px;
+}
+
+/* line 75, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__subtitle {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0D0D0D;
+  text-align: center;
+}
+
+/* line 82, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__descr {
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #0D0D0D;
+  text-align: center;
+}
+
+/* line 89, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__link {
+  display: block;
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #c70101;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 98, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__link:hover {
+  color: #c70101;
+}
+
+/* line 103, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item hr {
+  background-color: #E8E8E8;
+  margin-top: 19px;
+  margin-bottom: 21px;
+  border-bottom: none;
+}
+
+/* line 110, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 117, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__old-price {
+  font-weight: 300;
+  font-size: 14px;
+  color: #555555;
+  text-decoration: line-through;
+}
+
+/* line 124, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__new-price {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* line 131, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__wrapper {
+  display: flex;
+  width: calc(200% + 40px);
+}
+
+/* line 135, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__content {
+  width: 50%;
+  margin-right: 0px;
+  padding-right: 7px;
+  /* добавив тому що текст виходить за блок */
+  transform: translateX(-100%);
+  transition: 0.5s all;
+}
+
+/* line 141, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__content_active {
+  transform: translateX(0%);
+  margin-right: 20px;
+}
+
+/* line 146, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__list {
+  position: relative;
+  width: 50%;
+  margin-left: 20px;
+  transform: translateX(0%);
+  transition: 0.5s all;
+  padding-right: 20px;
+  padding-left: 19px;
+  margin-bottom: 0;
+  list-style-type: none;
+  /* display: none; */
+  /* поки що закриваємо */
+}
+
+/* line 157, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__list_active {
+  transform: translateX(-100%);
+  margin-right: 0px;
+}
+
+/* line 161, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 166, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__list li {
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+/* line 172, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__list li:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #c70101;
+  left: -14px;
+  top: 7px;
+}
+
+/* line 185, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__list .catalog-item__back {
+  /*   position: absolute; */
+  bottom: 0;
+  /* left: 50%;
+              transform: translateY(calc(-50% - 19px + 7px)); */
+  display: block;
+  padding-right: 39px;
+  /* паддінг 19 плюс марджін-райт 20 в &__list*/
+  font-weight: 500;
+  font-size: 14px;
+  color: #c70101;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 198, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_catalog.scss */
+.catalog-item__list .catalog-item__back:hover {
+  color: #c70101;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_feedbacks.scss */
+.feedbacks {
+  min-height: 920px;
+}
+
+/* line 4, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_feedbacks.scss */
+.feedbacks .container {
+  margin: 0 auto;
+  min-height: 920px;
+}
+
+/* line 8, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_feedbacks.scss */
+.feedbacks .feedback__title {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 17, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_feedbacks.scss */
+.feedbacks .feedback__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 870px;
+  height: 230px;
+  margin-top: 40px;
+}
+
+/* line 27, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_feedbacks.scss */
+.feedbacks img {
+  display: block;
+  width: 170px;
+  height: 170px;
+}
+
+/* line 33, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_feedbacks.scss */
+.feedbacks .feedback__text {
+  margin-top: 35px;
+  margin-left: 48px;
+  width: 660px;
+  height: 215px;
+}
+
+/* line 40, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_feedbacks.scss */
+.feedbacks .feedback__text .feedback__username {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0D0D0D;
+}
+
+/* line 45, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_feedbacks.scss */
+.feedbacks .feedback__text .feedback__result {
+  font-weight: 500;
+  font-size: 14px;
+  color: #646464;
+}
+
+/* line 50, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_feedbacks.scss */
+.feedbacks .feedback__text .feedback__descr {
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #0D0D0D;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_footer.scss */
+.footer {
+  min-height: 630px;
+  position: relative;
+}
+
+/* line 4, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_footer.scss */
+.footer__info {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 460px;
+  height: 270px;
+  background: #c70101;
+  padding: 50px 68px 60px 68px;
+}
+
+/* line 15, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_footer.scss */
+.footer__info .footer__address {
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+/* line 22, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_footer.scss */
+.footer__phone {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 28, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_footer.scss */
+.footer__phone:hover {
+  color: #ffffff;
+}
+
+/* line 32, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_footer.scss */
+.footer__social {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 36, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_footer.scss */
+.footer__social-item {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_modals.scss */
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+/* line 10, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_modals.scss */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 382px;
+  min-height: 402px;
+  /* to extend for text from validation */
+  background: #F2F2F2;
+  padding: 38px 40px 40px 40px;
+}
+
+/* line 19, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_modals.scss */
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  font-size: 41px;
+  line-height: 21px;
+  color: #c70101;
+  cursor: pointer;
+}
+
+/* line 30, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_modals.scss */
+.modal__subtitle {
+  font-weight: 700;
+  font-size: 19px;
+  color: #0D0D0D;
+  text-align: center;
+}
+
+/* line 36, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_modals.scss */
+.modal__descr {
+  font-weight: 500;
+  font-size: 14px;
+  color: #0D0D0D;
+  text-align: center;
+}
+
+/* line 43, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_modals.scss */
+.modal_mini {
+  min-height: 140px;
+}
+
+/* line 46, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_modals.scss */
+.modal input.error {
+  border: 1px solid red;
+}
+
+/* line 49, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_modals.scss */
+.modal label.error {
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* line 59, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_modals.scss */
+#consultation, #order, #thanks {
+  display: none;
+}
+
+/* line 1, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_pageup.scss */
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 8, ../../../../Frontend Development/UDEMY Courses/Web Dev 2022 - I.Petrichenko/Section 3/Pulse_project/sass/blocks/_pageup.scss */
+.pageup img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+.feedbacks {
+    min-height: 920px;
+
+    .container {
+        margin: 0 auto;
+        min-height: 920px;
+    }
+    .feedback__title {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+     }
+       
+    
+
+    .feedback__wrapper {
+      
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        min-width: 870px;
+        height: 230px;
+        margin-top: 40px;
+    }
+
+        img {
+            display: block;
+            width: 170px;
+            height: 170px;
+        }
+
+        .feedback__text {
+            
+            margin-top: 35px;
+            margin-left: 48px;
+            width: 660px;
+            height: 215px;
+
+            .feedback__username {
+                font-weight: 700;
+                font-size: 18px;
+                color: #0D0D0D;
+            }
+            .feedback__result {
+                font-weight: 500;
+                font-size: 14px;
+                color: #646464;
+            }
+            .feedback__descr {
+                margin-top: 5px;
+                font-weight: 300;
+                font-size: 16px;
+                color: #0D0D0D;
+            }
+            
+        }
+
+
+    }
+

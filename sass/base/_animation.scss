@@ -1,0 +1,15 @@
+.heart_animated {
+
+    @keyframes heartbeat {
+        from {
+            transform: scale(1);
+        }
+    
+        50% {
+            transform: scale(1.4);
+        }
+        to {
+            transform:  scale(1);
+        }
+    }
+}
